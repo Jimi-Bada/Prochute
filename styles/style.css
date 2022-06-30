@@ -14,6 +14,16 @@ ul li{
     list-style: none;
     /* padding-left: 0!important; */
 }
+.close-icon{
+    display: none;
+}
+.close-iconshow{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
 /* Marquee */
 marquee{
     margin: 0.5rem 0;
@@ -61,6 +71,51 @@ color: #fff;
     width: 1px;
     border: 1px solid rgba(255,255,255,.2);
     height: 15px;
+}
+
+.modal{
+    background: rgba(47, 44, 45, 0.8);
+}
+.modal-content{
+    background:  linear-gradient(90deg, rgb(47, 47, 50, 0.5) 0%, rgba(39, 37, 38, 0.5) 35%), url(/img/Bottom-Hinged-Chute-Intake-Door.jpg) no-repeat;
+    background-position: center;
+    background-size: cover; 
+    border-radius: .25rem;
+    height: 30rem;
+    width: 45rem!important;
+    padding: 1em;
+}
+.modal-content::after{
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    bottom: 0;
+    right: 0;
+    width: 95%;
+    height: 95%;
+   opacity: 0.5;
+    border: 2px dashed rgb(235, 218, 218);
+}
+.modal-header, .modal-body{
+ border-bottom: none!important;
+ width: 42ch;
+}
+.modal-footer{
+ border-top: none!important;
+}
+
+.modal-dialog{
+ margin: 8rem auto!important;
+}
+
+.bi-x-lg{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    opacity: 1;
+    color: #fff;
+    cursor: pointer;
 }
 .navbar-collapse > ul  > li> a{
     color:  rgba(102,102,102,.85)!important;

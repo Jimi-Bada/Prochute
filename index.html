@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
 
 <body>
+
     <section id="sliding-text">
         <marquee behavior="" direction="">
             <h3>
@@ -21,22 +25,23 @@
             </h3>
         </marquee>
     </section>
-    <header class="">
+    <header id="header">
+
         <div class="header-wrapper">
             <div class="top-bar d-flex align-items-center justify-content-center">
                 <div class="row container-fluid top-bar-wrapper">
                     <div class="col d-flex justify-content-start align-items-center nav nav-text ">
                         <h6>LAUNDRY AND TRASH CHUTE SOLUTION FOR RESIDENTIAL AND COMMERCIAL USE.</h6>
                     </div>
-                    <div class="col-lg-1 d-flex justify-content-end align-items-center nav newsletter">
+                    <div class="col-lg-1 d-none d-md-flex justify-content-end align-items-center nav newsletter">
 
-                        <a href="http://" class="signup-link  d-flex">
+                        <a href="#" class="signup-link d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <div class="nav-divider"></div>
                             <i class="bi bi-envelope"></i>
                             <span class="me-2">Newsletter</span>
                         </a>
                     </div>
-                    <div class="col-lg-1 d-flex justify-content-end align-items-center nav newsletter">
+                    <div class="col-lg-1 d-none d-md-flex justify-content-end align-items-center nav newsletter">
 
                         <a href="http://" class="signup-link  d-flex">
                             <div class="nav-divider"></div>
@@ -46,127 +51,88 @@
                         </a>
                     </div>
                 </div>
+                <div class="modal-wrapper">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <strong><i class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i></strong>
+                        <div class="modal-dialog d-flex  align-items-center flex-column">
+                            <div class="modal-content">
+                                <div class="modal-header mt-5 ms-5">
+                                    <h2 class="modal-title text-white" id="exampleModalLabel">SIGN UP TO OUR NEWSLETTERS
+                                        FOR SAVINGS</h2>
+                                </div>
+                                <div class="modal-body ms-5">
+                                    <p class="text-white fs-5">
+                                        Signup for our newsletter to get notified about sales and new products
+                                    </p>
+                                    <div class="modal-form">
+                                        <form>
+                                            <input type="email" id="email" name="email">
+                                            <input type="submit" value="Submit">
+                                        </form>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
     <section id="navigation-bar">
         <div class="navigation-bar-wrapper container-fluid">
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar-expand-lg bg-light ">
                 <div class="container-fluid">
-                    <a href="index.html" class="logo-link">
-                        <img src="img/MAIN-LOGO-PRO-CHUTES-TM.jpg" alt="Logo of the company" class="logo">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <a class="navbar-brand" href="#"><img src="img/MAIN-LOGO-PRO-CHUTES-TM.jpg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav menu-area mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item menu">
-                                <a class="nav-link myDropdown" href="#">Product Categories
-                                    <i class="bi bi-chevron-compact-down"></i>
-                                </a>
-                                <div class="hover-dropdown">
-                                    <ul class="nav-item for-dropdown">
-                                        <i class="bi bi-caret-up"></i>
-                                        <li id="product-list" class="container-fluid d-flex align-items-start ">
-                                            <img src="img/Doors-Intake-247x296.jpg" alt="">
-                                            <a href="http://" class="product "> Doors(Intake)</a>
-                                        </li>
-                                        <li id="product-list" class="container-fluid d-flex align-items-start">
-                                            <img src="img/Trash-Chute-Horizontal-Rolling-Discharge-Door.jpg" alt="">
-                                            <a href="http://" class="product ">Doors(Discharge)</a>
-                                        </li>
-                                        <li id="product-list" class="container-fluid d-flex align-items-start ">
-                                            <img src="img/Handles-Latches-247x296.jpg" alt="">
-                                            <a href="http://" class="product "> Handles and Latches</a>
-                                        </li>
-                                        <li id="product-list" class="container-fluid d-flex align-items-start ">
-                                            <img src="img/Closers-Hydraulic-Piston-Cylinder-Spring-Strut-247x296.jpg"
-                                                alt="">
-                                            <a href="http://" class="product "> Closers (Hydraulic &amp; Piston &amp;
-                                                Cylinder &amp; Spring &amp; Strut)</a>
-                                        </li>
-                                        <li id="product-list" class="container-fluid d-flex align-items-start">
-                                            <img src="img/Fusible-Links-247x296.jpg" alt="">
-                                            <a href="http://" class="product"> Fusible Links</a>
-                                        </li>
-                                        <li id="product-list" class="container-fluid d-flex align-items-start">
-                                            <img src="img/Night-Latches-for-Discharge-Doors-247x296.jpg" alt=""
-                                                srcset="">
-                                            <a href="http://" class="product">Night Latches (for Discharge Doors)</a>
-                                        </li>
-                                        <li id="product-list" class="container-fluid d-flex align-items-start">
-                                            <img src="img/Brackets-247x296.jpg" alt="" srcset="">
-                                            <a href="http://" class="product">Brackets</a>
-                                        </li>
-                                        <li id="product-list" class="container-fluid d-flex align-items-start">
-                                            <img src="img/Sprinklers-247x296.jpg" alt="" srcset="">
-                                            <a href="http://" class="product">Sprinklers</a>
-                                        </li>
-                                        <li id="product-list" class="container-fluid d-flex align-items-start">
-                                            <img src="img/trims_header.jpg" alt="" srcset="">
-                                            <a href="http://" class="product">Trims</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-
-                        </ul>
-                        <div class="select-options">
-                            <select id="options" name="">
-                                <option value="All" id="Categories" onclick="resize()">All</option>
-                                <option value="Brackets" id="Categories" onclick="resize()">Brackets</option>
-                                <option value="Closers" id="Categories" onclick="resize()">Closers (Hydraulic &amp;
-                                    Piston &amp;
-                                    Cylinder &amp; Spring &amp; Strut)
-                                </option>
-                                <option value="Doors">Doors(Discharge)</option>
-                                <option value="Doors-Intake">Doors(Intake)</option>
-                                <option value="Fusible-Links">Fusible Links</option>
-                                <option value="audi">Handles and Latches</option>
-                                <option value="audi">Night Latches (for Discharge Doors)</option>
-                                <option value="audi">Sprinklers</option>
-                                <option value="audi">Wilkinson Chutes Parts</option>
-                            </select>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
-                        <form class="d-flex me-auto" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
-                        </form>
-                    </div>
-                    <div class=" aside d-flex justify-content-end align-items-center">
-                        <ul class="d-flex justify-content-end align-items-center">
-                            <li class="navbar-right-text">
-                                Enjoy
-                                <strong style="color: #bf1b15">FREE</strong>
-                                <strong style="color: #ce9800">U.S Shipping </strong>
-                                / Fast Shipping
-                            </li>
-                            <li class="login ms-2">
-                                <a href="http://">LOGIN</a>
-                            </li>
-                            <li class="cart ms-2">
-                                <a href="http://">CART / $0.00 <i class="bi bi-bag"></i></a>
-                            </li>
-                        </ul>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </nav>
-
         </div>
+
+
+
+
     </section>
     <section id="showcase" class="mb-3">
         <div class="showcase-wrapper">
@@ -448,7 +414,7 @@
                 </div>
                 <div class="customercare-button">
                     <a href="http://" class="text-center">
-                      TALK WITH US
+                        TALK WITH US
                     </a>
                 </div>
             </div>
@@ -456,31 +422,34 @@
         </div>
 
     </section>
-    <section id = "services">
+    <section id="services">
         <div class="row container-fluid">
             <div class="col-lg-4">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col-lg-4">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col-lg-4">
                 <div class="card" style="width: 18rem;">
                     <img src="..." class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </section>
@@ -498,9 +467,10 @@
             </div>
             <div class="sigup-form">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username with two button addons">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                        aria-label="Recipient's username with two button addons">
                     <button class="btn btn-outline-secondary" type="button">Button</button>
-                  </div>
+                </div>
             </div>
         </div>
     </section>
@@ -520,7 +490,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
                                     the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
@@ -530,7 +501,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
                                     the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
@@ -540,7 +512,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
                                     the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
@@ -550,7 +523,8 @@
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
                                     the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
@@ -562,11 +536,11 @@
     </section>
     <section id="footer">
         <div class="footer-wrapper">
-            
+
         </div>
     </section>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
