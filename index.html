@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prochute</title>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
@@ -83,7 +83,7 @@
     </header>
     <section id="navigation-bar">
         <div class="navigation-bar-wrapper container-fluid">
-            <nav class="navbar navbar-expand-lg bg-light ">
+            <nav class="navbar navbar-expand-lg bg-light expand">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="img/MAIN-LOGO-PRO-CHUTES-TM.jpg" alt=""></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -95,29 +95,70 @@
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                                aria-label="Close">
+                            </button>
                         </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <div class="offcanvas-body menu-area">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
+                                <li class="nav-item menu">
+                                    <a class="nav-link myDropdown" href="#">Product Categories
+                                        <i class="bi bi-chevron-compact-down"></i>
                                     </a>
-                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
+                                    <div class="hover-dropdown">
+                                        <ul class="nav-item for-dropdown">
+                                            <i class="bi bi-caret-up"></i>
+                                            <li id="product-list" class="container-fluid d-flex align-items-start ">
+                                                <img src="img/Doors-Intake-247x296.jpg" alt="">
+                                                <a href="http://" class="product "> Doors(Intake)</a>
+                                            </li>
+                                            <li id="product-list" class="container-fluid d-flex align-items-start">
+                                                <img src="img/Trash-Chute-Horizontal-Rolling-Discharge-Door.jpg" alt="">
+                                                <a href="http://" class="product ">Doors(Discharge)</a>
+                                            </li>
+                                            <li id="product-list" class="container-fluid d-flex align-items-start ">
+                                                <img src="img/Handles-Latches-247x296.jpg" alt="">
+                                                <a href="http://" class="product "> Handles and Latches</a>
+                                            </li>
+                                            <li id="product-list" class="container-fluid d-flex align-items-start ">
+                                                <img src="img/Closers-Hydraulic-Piston-Cylinder-Spring-Strut-247x296.jpg"
+                                                    alt="">
+                                                <a href="http://" class="product "> Closers (Hydraulic &amp; Piston &amp;
+                                                    Cylinder &amp; Spring &amp; Strut)</a>
+                                            </li>
+                                            <li id="product-list" class="container-fluid d-flex align-items-start">
+                                                <img src="img/Fusible-Links-247x296.jpg" alt="">
+                                                <a href="http://" class="product"> Fusible Links</a>
+                                            </li>
+                                            <li id="product-list" class="container-fluid d-flex align-items-start">
+                                                <img src="img/Night-Latches-for-Discharge-Doors-247x296.jpg" alt=""
+                                                    srcset="">
+                                                <a href="http://" class="product">Night Latches (for Discharge Doors)</a>
+                                            </li>
+                                            <li id="product-list" class="container-fluid d-flex align-items-start">
+                                                <img src="img/Brackets-247x296.jpg" alt="" srcset="">
+                                                <a href="http://" class="product">Brackets</a>
+                                            </li>
+                                            <li id="product-list" class="container-fluid d-flex align-items-start">
+                                                <img src="img/Sprinklers-247x296.jpg" alt="" srcset="">
+                                                <a href="http://" class="product">Sprinklers</a>
+                                            </li>
+                                            <li id="product-list" class="container-fluid d-flex align-items-start">
+                                                <img src="img/trims_header.jpg" alt="" srcset="">
+                                                <a href="http://" class="product">Trims</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+            
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
                                 </li>
                             </ul>
                             <form class="d-flex" role="search">

@@ -117,7 +117,11 @@ color: #fff;
     color: #fff;
     cursor: pointer;
 }
-.navbar-collapse > ul  > li> a{
+/* navbar */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.offcanvas-body > ul  > li> a{
     color:  rgba(102,102,102,.85)!important;
     text-transform: uppercase;
     letter-spacing: .02rem;
@@ -125,9 +129,11 @@ color: #fff;
     font-size: .8rem;
     margin: 0 0.5rem;
     font-weight: 600;
+    padding-left: 0!important;
+    padding-right: 0!important;
 }
 
-.navbar-collapse > ul  > li> a:hover,.navbar-collapse > ul  > li> .active{
+.offcanvas-body > ul  > li> a:hover,.offcanvas-body > ul  > li> .active{
     color: rgba(17,17,17,.85)!important;
 }
 .hover-dropdown > .for-dropdown{
@@ -140,7 +146,7 @@ color: #fff;
     border: 2px solid #ddd;
   display: none;
    }
-   .collapse ul li:hover .hover-dropdown > .for-dropdown{
+   .menu-area ul li:hover .hover-dropdown > .for-dropdown{
     max-height: 0; 
     max-width: 260px;
     display: table;

@@ -14,12 +14,16 @@
 // resize();
 
 
-const modal  = document.querySelector('.modal');
-const closeModalIcon = document.querySelector(".bi-x-lg");
+// const modal  = document.querySelector('.modal');
+// const closeModalIcon = document.querySelector(".bi-x-lg");
 
 
 
-closeModalIcon.addEventListener('click',()=>{
-    modal.closeModal();
+// closeModalIcon.addEventListener('click',()=>{
+//     modal.closeModal();
 
-})
+// })
+// const navbarToggler = document.querySelector(".navbar-toggler");
+// console.log(navbarToggler.addEventListener("click", () => {
+//     navbarToggler.style.border = "none!important"    
+//     }));
