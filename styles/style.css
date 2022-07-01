@@ -121,6 +121,7 @@ color: #fff;
 .navbar-toggler:focus {
     box-shadow: none;
 }
+
 .offcanvas-body > ul  > li> a{
     color:  rgba(102,102,102,.85)!important;
     text-transform: uppercase;
@@ -135,6 +136,12 @@ color: #fff;
 
 .offcanvas-body > ul  > li> a:hover,.offcanvas-body > ul  > li> .active{
     color: rgba(17,17,17,.85)!important;
+}
+.offcanvas-start {
+    width: 42%;
+}
+.offcanvas-header .btn-close {
+    margin-right: -3.5rem;
 }
 .hover-dropdown > .for-dropdown{
     background: #fff;
@@ -189,7 +196,10 @@ color: #fff;
        height:2rem;
    }
    .form-control{
-      padding-right: 8.75rem!important;
+      padding: 0  12.75rem 0 0.75rem!important;
+   }
+   .search-control{
+       padding: 0 0.5rem 0 0.75rem!important;
    }
  .btn{
     background: #f0c14b!important;
@@ -199,6 +209,9 @@ color: #fff;
 }
 .aside{
     font-size: 0.75rem;
+}
+.aside ul{
+    margin-bottom: 0!important;
 }
 .login{
     position: relative;
@@ -350,6 +363,23 @@ iframe{
     width:16rem!important;
 } */
    
+
+
+/* media queries */
+@media screen and (max-width : 426px) {
+    .logo{
+        width:2rem;
+    }
+    
+.phone,#options{
+    height: 1.5rem!important;
+}
+.navbar-toggler{
+    padding: 0.5rem 0 0 0!important;
+}
+.navbar-brand{
+    margin: 0 0.5rem 0 0!important;    
+}
 
 
 
