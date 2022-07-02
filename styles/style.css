@@ -47,6 +47,9 @@ marquee h3{
     margin-bottom: 0!important;
     font-weight: 700; 
 }
+.phone-nav{
+    display: none;
+}
 .signup-link{
     vertical-align: top;
     padding-top: 5px;
@@ -122,7 +125,7 @@ color: #fff;
     box-shadow: none;
 }
 
-.offcanvas-body > ul  > li> a{
+.offcanvas-body >.largescreen-nav > ul  > li> a{
     color:  rgba(102,102,102,.85)!important;
     text-transform: uppercase;
     letter-spacing: .02rem;
@@ -134,7 +137,7 @@ color: #fff;
     padding-right: 0!important;
 }
 
-.offcanvas-body > ul  > li> a:hover,.offcanvas-body > ul  > li> .active{
+.offcanvas-body > .largescreen-nav > ul  > li> a:hover,.offcanvas-body > ul  > li> .active{
     color: rgba(17,17,17,.85)!important;
 }
 .offcanvas-start {
@@ -189,18 +192,16 @@ color: #fff;
        padding-top: 0.5rem!important;
        padding-bottom: 0.5rem!important;
    }
-   #options{
+   .select-options > #options{
        padding: 0.5rem auto;
        text-align: center;
        width:6ch;
        height:2rem;
    }
-   .form-control{
+  .select-options > form > .form-control{
       padding: 0  12.75rem 0 0.75rem!important;
    }
-   .search-control{
-       padding: 0 0.5rem 0 0.75rem!important;
-   }
+   
  .btn{
     background: #f0c14b!important;
     border: none;
@@ -374,11 +375,25 @@ iframe{
 .phone,#options{
     height: 1.5rem!important;
 }
+.search-control{
+    padding: 0 0.5rem 0 0.75rem!important;
+}
 .navbar-toggler{
     padding: 0.5rem 0 0 0!important;
 }
 .navbar-brand{
     margin: 0 0.5rem 0 0!important;    
+}
+.largescreen-nav{
+    display: none;
+}
+.phone-nav{
+    display: contents;
+}
+.section-title h3::before, 
+.section-title h3::after{
+    content: none;
+}
 }
 
 
