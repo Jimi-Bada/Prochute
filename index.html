@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -51,6 +52,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- start of modal -->
                 <div class="modal-wrapper">
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
@@ -77,6 +79,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- end of modal -->
 
             </div>
         </div>
@@ -84,12 +87,12 @@
     <section id="navigation-bar">
         <div class="navigation-bar-wrapper container-fluid ps-0 pe-0">
             <nav class="navbar navbar-expand-lg bg-light expand d-flex flex-nowrap flex-lg-wrap ">
-                <div class="container-fluid ps-0">
+                <div class="container-fluid ps-0 justify-content-start">
                     <button class="navbar-toggler fs-3 " type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img class="logo" src="img/MAIN-LOGO-PRO-CHUTES-TM.jpg" alt=""></a>
+                    <a class="navbar-brand" href="#"><img class="logo ps-2" src="img/MAIN-LOGO-PRO-CHUTES-TM.jpg" alt=""></a>
                     <div class="phone d-flex d-lg-none">
                         <div class="select-options">
                             <select id="options" name="">
@@ -119,13 +122,14 @@
 
                     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                            </button>
+                        <div class="offcanvas-header p-0">
+                            <!-- <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+                              
+                            </button> -->
+                            <i class="fa-solid fa-xmark fs-1 text-light text-bolder ms-auto " data-bs-dismiss="offcanvas" aria-label="Close" ></i>
                         </div>
                         <div class="offcanvas-body menu-area justify-content-between">
-                            <div class="largescreen-nav d-flex">
+                            <div class="largescreen-nav d-none d-lg-flex ">
                                 <ul class="navbar-nav justify-content-start pe-3">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -193,8 +197,10 @@
                                     <div class="select-options d-md-flex">
                                         <select id="options" name="">
                                             <option value="All" id="Categories" onclick="resize()">All</option>
-                                            <option value="Brackets" id="Categories" onclick="resize()">Brackets</option>
-                                            <option value="Closers" id="Categories" onclick="resize()">Closers (Hydraulic
+                                            <option value="Brackets" id="Categories" onclick="resize()">Brackets
+                                            </option>
+                                            <option value="Closers" id="Categories" onclick="resize()">Closers
+                                                (Hydraulic
                                                 &amp;
                                                 Piston &amp;
                                                 Cylinder &amp; Spring &amp; Strut)
@@ -208,18 +214,18 @@
                                             <option value="audi">Wilkinson Chutes Parts</option>
                                         </select>
                                         <form class="d-flex me-auto" role="search">
-                                            <input class="form-control search-control me-2" type="search" placeholder="Search"
-                                                aria-label="Search">
+                                            <input class="form-control search-control me-2" type="search"
+                                                placeholder="Search" aria-label="Search">
                                             <button class="btn btn-outline-success" type="submit"><i
                                                     class="bi bi-search"></i></button>
                                         </form>
-                                       
+
                                     </div>
                                 </ul>
-                               
-                               
+
+
                             </div>
-                            <div class=" aside d-flex justify-content-end align-items-center">
+                            <div class=" aside d-none d-lg-flex justify-content-end align-items-center">
                                 <ul class="d-flex justify-content-end align-items-center">
                                     <li class="navbar-right-text">
                                         Enjoy
@@ -239,9 +245,12 @@
                                 <div class="select-search d-flex">
                                     <div class="select-options">
                                         <select id="options" name="">
+                                            
                                             <option value="All" id="Categories" onclick="resize()">All</option>
-                                            <option value="Brackets" id="Categories" onclick="resize()">Brackets</option>
-                                            <option value="Closers" id="Categories" onclick="resize()">Closers (Hydraulic
+                                            <option value="Brackets" id="Categories" onclick="resize()">Brackets
+                                            </option>
+                                            <option value="Closers" id="Categories" onclick="resize()">Closers
+                                                (Hydraulic
                                                 &amp;
                                                 Piston &amp;
                                                 Cylinder &amp; Spring &amp; Strut)
@@ -256,22 +265,22 @@
                                         </select>
                                     </div>
                                     <form class="d-flex me-auto" role="search">
-                                        <input class="form-control search-control me-2" type="search" placeholder="Search"
-                                            aria-label="Search">
+                                        <input class="form-control search-control me-2" type="search"
+                                            placeholder="Search" aria-label="Search">
                                         <button class="btn btn-outline-success" type="submit"><i
                                                 class="bi bi-search"></i></button>
                                     </form>
                                 </div>
-                                <ul class="navbar-nav justify-content-start pe-3">
-                                    <li class="nav-item">
+                                <ul class="navbar-nav justify-content-start pe-3 pt-3">
+                                    <li class="nav-item p-2">
                                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li>
-                                    <li class="nav-item menu">
+                                    <li class="nav-item menu p-2 ">
                                         <a class="nav-link myDropdown" href="#">Product Categories
-                                            <i class="bi bi-chevron-compact-down"></i>
+                                            <i class="bi bi-chevron-compact-down phone-nav-chevron" onclick="toggleDropdown()"></i>
                                         </a>
-                                        <div class="hover-dropdown">
-                                            <ul class="nav-item for-dropdown">
+                                        <div class="dropdown ">
+                                            <ul class="nav-item for-dropdown ps-0">
                                                 <i class="bi bi-caret-up"></i>
                                                 <li id="product-list" class="container-fluid d-flex align-items-start ">
                                                     <img src="img/Doors-Intake-247x296.jpg" alt="">
@@ -320,29 +329,39 @@
 
 
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item p-2">
                                         <a class="nav-link" href="#">About Us</a>
                                     </li>
-                                    <li class="nav-item">
+                                    <li class="nav-item p-2">
                                         <a class="nav-link" href="#">Contact</a>
                                     </li>
+                                    <li class="nav-item p-2">
+                                        <a class="nav-link" href="#">Login</a>
+                                    </li>
+                                    <li class="nav-item p-2">
+                                        <a href="#" class="signup-link d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <i class="bi bi-envelope"></i>
+                                            <span class="me-2">Newsletter</span>
+                                        </a>
+                                    </li>
+                                   
                                 </ul>
-                               
-                                
-                                <div class=" aside d-flex justify-content-end align-items-center">
-                                    <ul class="d-flex justify-content-end align-items-center">
+
+
+                                <div class=" aside d-flex justify-content-start align-items-center">
+                                    <ul class="d-flex justify-content-start align-items-center ps-3 pt-4">
                                         <li class="navbar-right-text">
                                             Enjoy
                                             <strong style="color: #bf1b15">FREE</strong>
-                                            <strong style="color: #ce9800">U.S Shipping </strong>
+                                            <strong style="color: #ce9800">U.S Shipping </strong><br>
                                             / Fast Shipping
                                         </li>
-                                        <li class="login ms-2">
+                                        <!-- <li class="login ms-2">
                                             <a href="http://">LOGIN</a>
                                         </li>
                                         <li class="cart ms-2">
                                             <a href="http://">CART / $0.00 <i class="bi bi-bag"></i></a>
-                                        </li>
+                                        </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -768,6 +787,7 @@
     </section>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </body>
 
 </html>
