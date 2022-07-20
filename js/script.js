@@ -35,6 +35,6 @@ console.log(chevron);
 
 function toggleDropdown(){
     chevron.classList.toggle('bi-chevron-compact-up')
-   console.log(dropdown.classList.toggle('d-table')) ;
+   console.log(dropdown.classList.toggle('table-display')) ;
     
 }
