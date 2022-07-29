@@ -446,8 +446,7 @@ figcaption{
 
 
 .video-container{ 
-    background: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(16,16,17,0.7459901441045168) 35%), url(/img/Hi-Rise-Building.jpg);
-  
+    background: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(16,16,17,0.7459901441045168) 35%), url("../img/Hi-Rise-Building.jpg");
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
@@ -458,7 +457,7 @@ iframe{
     /* margin-top: 3rem; */
 }
 .customer-care{
-    background-image: url(/img/customer-service.jpg);
+    background-image: url("../img/customer-service.jpg");
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 3% 55%;
@@ -561,7 +560,7 @@ iframe{
 } */
 
 .review-container{
-    background: linear-gradient(90deg, rgba(2,0,36,0.3) 14%, rgba(0,0,0,0.3) 38%), url(/img/testimonials.jpg);
+    background: linear-gradient(90deg, rgba(2,0,36,0.3) 14%, rgba(0,0,0,0.3) 38%), url("../img/testimonials.jpg");
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
