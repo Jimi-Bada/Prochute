@@ -443,6 +443,9 @@ figcaption{
     text-transform: uppercase;
     opacity: 1;
 }
+.phone-card-text, .phone-card-btn{
+    font-size: 0.8rem;
+}
 
 
 .video-container{ 
@@ -670,6 +673,19 @@ iframe{
 }
 .modal-body p{
     font-size: 1rem!important;
+}
+.carousel-caption{
+    bottom: 0.5rem;
+}
+.carousel-caption h1{ 
+    font-size: 1.2rem!important;
+}
+.carousel-caption h4{
+    font-size: 0.8rem!important;
+}
+.carousel-caption p{
+    font-size: 0.5rem!important;
+    
 }
 }
 
