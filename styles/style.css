@@ -83,7 +83,7 @@ color: #fff;
     background: rgba(47, 44, 45, 0.8);
 }
 .modal-content{
-    background:  linear-gradient(90deg, rgb(47, 47, 50, 0.5) 0%, rgba(39, 37, 38, 0.5) 35%), url(/img/Bottom-Hinged-Chute-Intake-Door.jpg) no-repeat;
+    background:  linear-gradient(90deg, rgb(47, 47, 50, 0.5) 0%, rgba(39, 37, 38, 0.5) 35%), url(img/Bottom-Hinged-Chute-Intake-Door.jpg) no-repeat;
     background-position: center;
     background-size: cover; 
     border-radius: .25rem;
