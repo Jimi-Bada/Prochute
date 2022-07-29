@@ -31,10 +31,15 @@
 
 const chevron = document.querySelector('.phone-nav-chevron');
 const dropdown = document.querySelector('.dropdown');
+const menu = document.querySelector('#nav-item-menu');
+const phoneNewsletter = document.querySelector('.phone-newsletter');
 console.log(chevron);
 
 function toggleDropdown(){
     chevron.classList.toggle('bi-chevron-compact-up')
    console.log(dropdown.classList.toggle('table-display')) ;
+    menu.classList.toggle("nav-item-menu");
+}
+function closeNav(){
     
 }

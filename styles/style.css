@@ -50,6 +50,9 @@ marquee h3{
 .phone-nav{
     display: none;
 }
+.nav-item-menu{
+    background-color: rgba(212, 212, 212, 0.5);
+}
 .signup-link{
     vertical-align: top;
     padding-top: 5px;
@@ -61,7 +64,7 @@ marquee h3{
 .signup-link:hover{
 color: #fff;
 }
-.bi::before{
+.top-bar .bi::before{
   font-weight: 800!important;
   margin: 0.1rem 0.5rem 0 0!important;
 }
@@ -111,7 +114,16 @@ color: #fff;
 .modal-dialog{
  margin: 8rem auto!important;
 }
-
+.modal-input{
+    background: rgba(212, 212, 212, 0.3);
+}
+.modal-input::placeholder{
+    color: #fff;
+}
+.modal-submit-btn{
+    color: #fff;
+    background: #446084;
+}
 .bi-x-lg{
     position: absolute;
     top: 0.5rem;
@@ -232,11 +244,16 @@ color: #fff;
       padding: 0  12.75rem 0 0.75rem!important;
    }
    
- .btn{
+ #navigation-bar .btn{
     background: #f0c14b!important;
     border: none;
     color: #334862!important;
     padding: 0 0.5rem;
+}
+.btn-light{
+    background-color: #fff !important;
+    color: #666 !important;
+    font-size: 0.8rem!important;
 }
 .aside{
     font-size: 0.75rem;
@@ -278,7 +295,7 @@ color: #fff;
     color: transparent!important;
     box-sizing: border-box!important;
 }
-.carousel-control-prev-icon{
+.carousel-control-prev-icon, .carousel-control-next-icon{
     border: 2px solid #fff;
     border-radius: 50%;
     background-size: 25px 23px;
@@ -286,22 +303,18 @@ color: #fff;
     background-position: left;
    
 }
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover{
+.showcase-carousel-control-prev-icon:hover,
+.showcase-carousel-control-next-icon:hover{
     background-color: #446084;
 }
 .carousel-control-next-icon{
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background-size: 25px 23px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
 }
 .carousel-control-prev {
     left: -82px;
 }
 .carousel-control-next {
-    right: -70px!important;
+   width: 9%!important;
 }
 .carousel-caption {
     position: absolute;
@@ -311,19 +324,35 @@ color: #fff;
 }
 .carousel-caption-2{
     right: 6%!important;
-    bottom: 8.25rem;
+    bottom: 4.25rem
+    ;
+}
+.carousel-caption-3{
+    right: 6%!important;
+    left: 0!important;
+   
 }
 .carousel-caption h1{
     font-size: 3rem!important;
 }
 /* best selling product */
-.section-title h3{
+.section-title{
+    position: relative;
+}
+.section-title h5{
     border: 2px solid #ddd;
     padding: 0.8rem;
     position: relative;
+    color:  rgb(68, 96, 132);
     
 }
-.section-title h3::before{
+#best-selling-products .row, .categories-carousel > .row{
+    --bs-gutter-x:0!important;
+}
+#best-selling-products .card{
+    border: 0px!important;
+}
+/* .section-title h3::before{
     content: "";
     position: absolute;
     top: 2rem;
@@ -346,6 +375,40 @@ color: #fff;
     border-bottom: 2px solid rgba(144, 29, 29, 0.1);
     font-weight: 800;
     
+} */
+.section-title b{
+    display: block;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 2px;
+    opacity: 1;
+    margin-top: 2rem;
+    background-color: rgba(144, 29, 29, 0.1);
+   
+}
+/* .section-title b{
+    display: block;
+    width: 100rem;
+    border-bottom: 2px solid rgba(144, 29, 29, 0.1);
+    height: 34px;
+} */
+.card-body h6{
+    font-size: 0.68rem!important;
+
+}
+.card-body .btn-warning{
+    display: block;
+    padding: 2px;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    background-color: #E67A00!important;
+    width: 70%;
+}
+.card-body .bi-star-fill{
+    color:#d26e4b;
+    margin: 0!important;
 }
 .overlay {
     position: absolute;
@@ -361,21 +424,27 @@ color: #fff;
 .product-card > .overlay:hover{
     opacity: 1;
 }
+
+.overlay-content{
+    position: relative;
+}
 figcaption{
-    bottom: 10.5rem;
-    left: 0.43rem;
+    bottom:0rem;
+    left: 0.55rem;
     right: 0;
     color: #fff;
     text-align: center;
     font-size: 1rem;
-    z-index: 1;
+    z-index: 9;
     background-color: #446084;
     position: absolute;
-    width: 100%;
+    width: 95.5%;
     height: 5%;
     text-transform: uppercase;
-
+    opacity: 1;
 }
+
+
 .video-container{ 
     background: linear-gradient(90deg, rgba(2,0,36,0.7) 0%, rgba(16,16,17,0.7459901441045168) 35%), url(/img/Hi-Rise-Building.jpg);
   
@@ -392,22 +461,164 @@ iframe{
     background-image: url(/img/customer-service.jpg);
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-position: 50% 50%;
+    background-position: 3% 55%;
     height: 50vh;
+    position: relative;
   
 
+}
+.customercare-title h1{
+    font-size: 2rem!important;
 }
 .overlay-customer-container{
   opacity: 1;
     color: #fff;
+    z-index: 200;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 /* .product-card{
     width:16rem!important;
 } */
-   
+.categories-card .card-body{
+    padding: 0rem;
+ height: 20%;
+    text-align: center;
+    background-color: rgba(254, 254, 254);
+    color: black;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 2.8rem;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
 
+}
+.categories-card .card-title{
+    font-size: 0.9rem!important;
+    font-weight: 700;
+}
+.categories-card{
+    position: relative;
+    border: none;
+}
+.categories-card:hover .categories-body {
+    background-color:#446084 ;
+    color: #fff;
+    
+}
+.browse-categories-carousel-prev,  .browse-categories-carousel-next{
+    background-color:rgba(254, 254, 254) ;
+    z-index: 900;
+    width: 2%!important;
+}
+.browse-categories-carousel-prev{
+    left: 0;
+}
+.browse-categories-carousel-next-icon, .browse-categories-carousel-prev-icon{
+    background:none;
+    color: black!important;
+    font-weight: 800;
+    font-size: 1.5rem!important;
+    border: none!important;
+}
+
+.customer-care::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.69);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.signup-wrapper{
+    background: #2d496a;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.newsletter-input::placeholder{
+    color: #fff;
+}
+/* .signup-wrapper::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.17);
+
+} */
+
+.review-container{
+    background: linear-gradient(90deg, rgba(2,0,36,0.3) 14%, rgba(0,0,0,0.3) 38%), url(/img/testimonials.jpg);
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 50%;
+    position: relative;
+}
+.overlay-reviews{
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.reviews-card{
+    background: rgba(255,255,255,.58);
+
+}
+
+.twitter-icon, .youtube-icon{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 0.3rem;
+    background: grey;
+ 
+}
+.youtube-icon:hover{
+    background-color: red;
+    color: #fff;
+}
+.twitter-icon:hover{
+    background-color: #1DA1F2;
+    color: #fff;
+}
+.twitter-icon .bi-twitter, .youtube-icon .bi-youtube{
+   color: #fff;
+
+}
+.footer-wrapper{
+    background: grey;
+}
+.footer-divider{
+    border-top:2px solid rgba(255,255,255,.08);
+    height: 1px;
+}
+.footer-links ul li a , .copyright-footer{
+    color:rgba(255,255,255,.5)!important ;
+}
+.fll:hover{
+    color: #fff!important;
+}
 
 /* media queries */
+
 @media screen and (max-width : 426px) {
     .logo{
         width:2rem;
@@ -441,6 +652,25 @@ iframe{
     display: flex;  
     overflow-y: hidden;
     text-align: start;
+}
+.modal-dialog{
+    margin: 0rem!important;
+
+}
+.modal-content{
+    width: 22rem;
+}
+.modal-content::after{
+    left: 0.5rem;
+}
+.modal-header, .modal-body{
+    width: 28ch;
+}
+.modal-title{
+    font-size: 1.5rem!important;
+}
+.modal-body p{
+    font-size: 1rem!important;
 }
 }
 

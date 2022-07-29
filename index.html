@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
 </head>
 
 <body>
-
+<div class="container-fluid">
     <section id="sliding-text">
         <marquee behavior="" direction="">
             <h3>
@@ -59,18 +62,18 @@
                         <strong><i class="bi bi-x-lg" data-bs-dismiss="modal" aria-label="Close"></i></strong>
                         <div class="modal-dialog d-flex  align-items-center flex-column">
                             <div class="modal-content">
-                                <div class="modal-header mt-5 ms-5">
-                                    <h2 class="modal-title text-white" id="exampleModalLabel">SIGN UP TO OUR NEWSLETTERS
+                                <div class="modal-header mt-5 ms-0 ms-sm-5">
+                                    <h2 class="modal-title text-white " id="exampleModalLabel">SIGN UP TO OUR NEWSLETTERS
                                         FOR SAVINGS</h2>
                                 </div>
-                                <div class="modal-body ms-5">
+                                <div class="modal-body ms-0 ms-sm-5">
                                     <p class="text-white fs-5">
                                         Signup for our newsletter to get notified about sales and new products
                                     </p>
                                     <div class="modal-form">
                                         <form>
-                                            <input type="email" id="email" name="email">
-                                            <input type="submit" value="Submit">
+                                            <input type="email" id="email" name="email" class="rounded-pill  p-1 pe-4 me-3 modal-input" placeholder="Your Email">
+                                            <input type="submit" value="Submit" class="rounded-pill text-uppercase p-1 px-3 mt-3 mt-sm-0 modal-submit-btn">
                                         </form>
                                     </div>
                                 </div>
@@ -92,7 +95,8 @@
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img class="logo ps-2" src="img/MAIN-LOGO-PRO-CHUTES-TM.jpg" alt=""></a>
+                    <a class="navbar-brand" href="#"><img class="logo ps-2" src="img/MAIN-LOGO-PRO-CHUTES-TM.jpg"
+                            alt=""></a>
                     <div class="phone d-flex d-lg-none">
                         <div class="select-options">
                             <select id="options" name="">
@@ -126,7 +130,8 @@
                             <!-- <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
                               
                             </button> -->
-                            <i class="fa-solid fa-xmark fs-1 text-light text-bolder ms-auto " data-bs-dismiss="offcanvas" aria-label="Close" ></i>
+                            <i class="fa-solid fa-xmark fs-1 text-light text-bolder ms-auto "
+                                data-bs-dismiss="offcanvas" aria-label="Close"></i>
                         </div>
                         <div class="offcanvas-body menu-area justify-content-between">
                             <div class="largescreen-nav d-none d-lg-flex ">
@@ -245,7 +250,7 @@
                                 <div class="select-search d-flex">
                                     <div class="select-options">
                                         <select id="options" name="">
-                                            
+
                                             <option value="All" id="Categories" onclick="resize()">All</option>
                                             <option value="Brackets" id="Categories" onclick="resize()">Brackets
                                             </option>
@@ -271,13 +276,14 @@
                                                 class="bi bi-search"></i></button>
                                     </form>
                                 </div>
-                                <ul class="navbar-nav justify-content-start pe-3 pt-3">
+                                <ul class="navbar-nav justify-content-start pe-0 pt-3">
                                     <li class="nav-item p-2">
                                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                                     </li>
-                                    <li class="nav-item menu p-2 ">
+                                    <li class="nav-item menu p-1 " id="nav-item-menu">
                                         <a class="nav-link myDropdown" href="#">Product Categories
-                                            <i class="bi bi-chevron-compact-down phone-nav-chevron" onclick="toggleDropdown()"></i>
+                                            <i class="bi bi-chevron-compact-down phone-nav-chevron"
+                                                onclick="toggleDropdown()"></i>
                                         </a>
                                         <div class="dropdown ">
                                             <ul class="nav-item for-dropdown ps-0">
@@ -338,13 +344,14 @@
                                     <li class="nav-item p-2">
                                         <a class="nav-link" href="#">Login</a>
                                     </li>
-                                    <li class="nav-item p-2">
-                                        <a href="#" class="signup-link d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <li class="nav-item phone-newsletter p-2">
+                                        <a href="#" class="signup-link d-flex" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
                                             <i class="bi bi-envelope"></i>
                                             <span class="me-2">Newsletter</span>
                                         </a>
                                     </li>
-                                   
+
                                 </ul>
 
 
@@ -397,8 +404,9 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/trash-chute-parts-min-1400x337.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-flex align-items-start flex-column text-start">
+                        <img src="img/trash-chute-parts-min-1400x337.jpg" class="d-sm-block d-none w-100 " alt="...">
+                        <img src="img/trash-chute-parts-mobile.jpg" alt=""class="d-block d-sm-none img-fluid" >
+                        <div class="carousel-caption  d-md-flex align-items-start flex-column text-start">
                             <h1>
                                 <strong>
                                     Trash &amp; Laundry
@@ -408,38 +416,59 @@
                                     Chute Doors
                                 </strong>
                             </h1>
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <p>Bottom And Side Hinged Chute Intake Doors Along With Hopper And Horizontal <br> Rolling
+                                Discharge Doors.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/5-min-1400x337.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-flex align-items-end flex-column text-end carousel-caption-2">
+                        <img src="img/5-min-1400x337.jpg" class="d-none d-sm-block w-100" alt="...">
+                        <img src="img/handle-and-latches-for-trash-chute-doors-mobile.jpg" class="d-block d-sm-none img-fluid" alt="">
+                        <div
+                            class="carousel-caption  d-md-flex align-items-end flex-column text-end carousel-caption-2">
                             <h1>
                                 <strong>
                                     Handles &amp; Latches
                                     <br>
                                 </strong>
-                               
+
                             </h1>
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <p>We Have The Best Quality Handles And Latches For Both Your Garbage And Linen Chute <br>
+                                Doors.</p>
+                            <a href="http://" class="btn btn-light shopnow-btn text-center mt-3" role="button">
+                                SHOP NOW
+                                <i class="bi bi-basket-fill ms-2"></i>
+                                </button>
+
+                            </a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Closers-min-1400x337.jpg" class="d-block w-100" alt="...">
+                        <img src="img/Closers-min-1400x337.jpg" class="d-none d-sm-block w-100" alt="...">
+                        <img src="img/Closer-hydraulics-gas-springs-pistons-cylinders-shock-strut-mobile.jpg" class="d-block d-sm-none img-fluid" alt="">
+                        <div
+                            class="carousel-caption  d-md-flex align-items-end flex-column text-end carousel-caption-3">
+                            <h4 class="text-uppercase "><strong>Closers Including Hydraulics, Gas Springs,<br> Pistons,
+                                    Cylinders, Shocks, &amp; Struts</strong></h4>
+                            <p><span style="font-size: 95%;" class="text-end">The Perfect Fit Closer For Your Chute
+                                    Intake Door.</span></p>
+                            <a href="http://" class="btn btn-light shopnow-btn text-center mt-3" role="button">
+                                SHOP NOW
+                                <i class="bi bi-basket-fill ms-2"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Banner-for-Fusible-Links-1-min-1400x337.jpg" class="d-none d-sm-block w-100" alt="...">
+                        <img src="img/Fusible-Links-trash-chute-laundry-fire-rated-mobile.jpg" class="d-block d-sm-none img-fluid" alt="">
                         <div class="carousel-caption d-none d-md-flex align-items-start flex-column text-start">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Banner-for-Fusible-Links-1-min-1400x337.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-flex align-items-start flex-column text-start">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/Night-Latches-min-1400x337.jpg" class="d-block w-100" alt="...">
+                        <img src="img/Night-Latches-min-1400x337.jpg" class="d-none d-sm-block w-100" alt="...">
+                        <img src="img/Laundry-chute-night-latch-1-mobile.jpg" class="d-block d-sm-none  img-fluid" alt="">
                         <div class="carousel-caption d-none d-md-flex align-items-end flex-column text-start">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
@@ -448,97 +477,195 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                    <span class="carousel-control-prev-icon showcase-carousel-control-prev-icon"
+                        aria-hidden="false"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon showcase-carousel-control-next-icon d-none d-sm-flex"
+                        aria-hidden="false"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
     </section>
     <section id="best-selling-products">
-        <div class="section-title container-fluid d-flex justify-content-center">
-            <h3>Best Selling Products</h3>
+        <div class="section-title container-fluid d-flex justify-content-center my-4">
+            <b></b>
+            <h5 class="text-uppercase fw-bolder">Best Selling Products</h5>
+            <b></b>
         </div>
-        <div class="row container-fluid">
+        <div class="row container-fluid mx-auto">
             <div class="col">
                 <div class="card product-card">
                     <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
+                        <div class="overlay-content">
+                            <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="" class="w-100">
+                            <figcaption
+                                class="d-flex justify-content-center align-items-center animate__animated animate__fadeInUp animate__fast p-3">
+                                Quick view</figcaption>
+                            <!-- <div class="caption">Quick view</div> -->
+                        </div>
+
                     </div>
                     <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <button type="button" class="btn btn-warning ">Ships out 48 Hours!</button>
+                        <h6 class="card-title text-uppercase text-secondary">Doors (intake)</h6>
+                        <p class="card-text">Trash Chute Doors 15 x 18 Stainless Steel Bottom Hinged Intake Door –
+                            Midland Style.</p>
+                        <span class="five-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="d-flex">
+                            <p class="text-secondary me-2"> <del>$349.00</del></p>
+                            <hr>
+                            <p class="fw-bolder">$329.00</p>
+                        </span>
+
+
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                     </div>
+
+
                 </div>
             </div>
             <div class="col">
                 <div class="card product-card">
                     <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
+                        <div class="overlay-content">
+                            <img src="img/Ball-Studs-300x300.jpg" alt="" class="w-100">
+                            <figcaption
+                                class="d-flex justify-content-center align-items-center animate__animated animate__fadeInUp animate__fast animate__delay-2s p-3">
+                                Quick view</figcaption>
+                        </div>
+
                     </div>
-                    <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
+                    <img src="img/10-inch-trash-chute-closer-300x300.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h6 class="card-title text-secondary">CLOSERS (HYDRAULIC & PISTON & CYLINDER & SPRING & ST..
+                        </h6>
+                        <p class="card-text">Trash chute door closers parts. 10" inch extended closure for bottom hinged
+                            garbage &amp; rubbish intake doors</p>
+                        <span class="five-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="fw-bolder">$29.50</p>
+                        <a href="#" class="btn btn-primary text-uppercase" style="background-color: #446084;">Add to
+                            cart</a>
                     </div>
                 </div>
             </div>
             <div class="col">
-                <div class=" card product-card">
+                <div class=" card product-card ">
                     <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
+                        <div class="overlay-content">
+                            <img src="img/Trash-chute-T-handles-and-Laundry-chute-door-latch-kit-with-V-spindle-for-bottom-side-hinged-doors1-300x300.jpg"
+                                alt="" class="w-100">
+                            <figcaption
+                                class="d-flex justify-content-center align-items-center animate__animated animate__fadeInUp animate__fast animate__delay-3s p-3">
+                                Quick view</figcaption>
+                        </div>
+
                     </div>
-                    <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
+                    <img src="img/Trash-chute-T-handles-and-Laundry-chute-door-latch-kit-with-V-spindle-for-bottom-side-hinged-doors-300x300.jpg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h6 class="card-title text-secondary">HANDLES & LATCHES</h6>
+                        <p class="card-text">Trash chute T handles and Laundry chute door latch kit with V spindle for
+                            bottom & side hinged doors. Compatible handle hardware parts by Pro Chutes.</p>
+                        <span class="five-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="d-flex">
+                            <p class="text-secondary me-2"> <del>$39.00</del></p>
+                            <hr>
+                            <p class="fw-bolder">$38.00</p>
+                        </span>
+                        <a href="#" class="btn btn-primary text-uppercase" style="background-color: #446084;">Add to
+                            cart</a>
                     </div>
                 </div>
             </div>
             <div class="col ">
                 <div class=" card product-card">
                     <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
+                        <div class="overlay-content">
+                            <img src="img/61CsFlV7zgL._AC_SL1000_-300x300.jpg" alt="" class="w-100">
+                            <figcaption
+                                class="d-flex justify-content-center align-items-center animate__animated animate__fadeInUp animate__fast animate__delay-4s p-3">
+                                Quick view</figcaption>
+                        </div>
+
                     </div>
-                    <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
+                    <img src="img/side-thumb-latch-trigger-copper-galv-main-cyl-embos-300x300.jpg" class="card-img-top"
+                        alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h6 class="card-title text-secondary">HANDLES & LATCHES</h6>
+                        <p class="card-text">Laundry Chute Thumb Latch Trigger Handle for Side Hinged Door with 1-3/4,
+                            and 1-23/32 Inch Backset Tubular Parts for Wilkinson and Other Manufactured Doors</p>
+                        <span class="five-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <p class="fw-bolder">$34.99</p>
+                        <a href="#" class="btn btn-primary text-uppercase" style="background-color: #446084;">Select
+                            Options</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card product-card">
                     <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
+                        <div class="overlay-content">
+                            <img src="img/Trash-Chute-Door-Hydraulic-Closer.-10-Inch-Retracted-Piston-Pump-for-Bottom-Side-Hinged-Laundry-and-Garbage-Doors1-600x600.jpg"
+                                alt="" class="w-100">
+                            <figcaption
+                                class="d-flex justify-content-center align-items-center animate__animated animate__fadeInUp animate__fast animate__delay-5s p-3">
+                                Quick view</figcaption>
+                        </div>
+
                     </div>
-                    <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
+                    <img src="img/Trash-Chute-Door-Hydraulic-Closer.-10-Inch-Retracted-Piston-Pump-for-Bottom-Side-Hinged-Laundry-and-Garbage-Doors-300x300 (1).jpg"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h6 class="card-title text-secondary">CLOSERS (HYDRAULIC & PISTON & CYLINDER & SPRING & ST</h6>
+                        <p class="card-text">Trash Chute Hydraulic Closer. 10 Inch Retracted Piston Pump for Bottom &
+                            Side Hinged Laundry and Garbage Doors.</p>
+                        <span class="five-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </span>
+                        <span class="d-flex">
+                            <p class="text-secondary me-2"> <del>$45.37</del></p>
+                            <hr>
+                            <p class="fw-bolder">$44.87</p>
+                        </span>
+                        <a href="#" class="btn btn-primary text-uppercase" style="background-color: #446084;">Add to
+                            CArt</a>
                     </div>
                 </div>
             </div>
+        </div>
 
         </div>
     </section>
@@ -554,89 +681,151 @@
             </div>
 
         </div>
-        </div>
+
     </section>
     <section id="browse-categories  ">
-        <div class="section-title container-fluid d-flex justify-content-center mt-3">
-            <h3>Browse our categories</h3>
+        <div class="section-title container-fluid d-flex justify-content-center my-4">
+            <b></b>
+            <h5 class="text-uppercase fw-bolder">Browse our categories</h5>
+            <b></b>
         </div>
-        <div class="row container-fluid">
-            <div class="col">
-                <div class="card product-card">
-                    <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
-                    </div>
-                    <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card product-card">
-                    <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
-                    </div>
-                    <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class=" card product-card">
-                    <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
-                    </div>
-                    <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col ">
-                <div class=" card product-card">
-                    <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
-                    </div>
-                    <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card product-card">
-                    <div class="overlay">
-                        <img src="img/15-x-18-Bottom-Hinged-Midland-style-300x300.jpg" alt="">
-                        <figcaption class="d-flex justify-content-center align-items-center">Quick view</figcaption>
-                    </div>
-                    <img src="img/trash-chute-doors-1-300x300.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
 
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+            data-bs-interval="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active categories-carousel">
+                    <div class="row container-fluid">
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Doors-Intake-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">Doors(intake)</h5>
+                                    <h6 class="text-uppercase">10 products</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Trash-Chute-Horizontal-Rolling-Discharge-Door-300x300.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">Doors(Discharge)</h5>
+                                    <h6 class="text-uppercase">7 products</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Handles-Latches-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">Handles and Latches</h5>
+                                    <h6 class="text-uppercase">10 products</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Closers-Hydraulic-Piston-Cylinder-Spring-Strut-300x300.jpg"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">CLOSERS (HYDRAULIC & PISTON & CYLINDER & SPRING & STrut)
+                                    </h5>
+                                    <h6 class="text-uppercase">7 products</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Fusible-Links-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">fusible Links)</h5>
+                                    <h6 class="text-uppercase">10 products</h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="row container-fluid">
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Night-Latches-for-Discharge-Doors-300x300.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">night latches(for discharge doors)</h5>
+                                    <h6 class="text-uppercase">2 products</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Brackets-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">brackets</h5>
+                                    <h6 class="text-uppercase">3 products</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Sprinklers-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">sprinklers</h5>
+                                    <h6 class="text-uppercase">1 product</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Wilkinson-Chutes-Parts-300x300.png" class="card-img-top" alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">wilkinson chutes parts</h5>
+                                    <h6 class="text-uppercase">7 products</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col pe-2">
+                            <div class="card categories-card">
+
+                                <img src="img/Doors-Intake-300x300.jpg" class="card-img-top" alt="...">
+                                <div class="card-body categories-body">
+                                    <h5 class="card-title m-0">doors(intake)</h5>
+                                    <h6 class="text-uppercase">10 products</h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev browse-categories-carousel-prev" type="button"
+                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon browse-categories-carousel-prev-icon" aria-hidden="true"><i
+                        class="bi bi-chevron-left"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next browse-categories-carousel-next " type="button"
+                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon browse-categories-carousel-next-icon" aria-hidden="true"><i
+                        class="bi bi-chevron-right"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
     <section id="customer-care">
         <div class="container-fluid d-flex justify-content-center customer-care">
@@ -657,132 +846,233 @@
                     </p>
                 </div>
                 <div class="customercare-button">
-                    <a href="http://" class="text-center">
-                        TALK WITH US
-                    </a>
+                    <a href="#" class="btn btn-primary text-uppercase rounded-pill px-4 border border-dark"
+                        style="background-color: #446084;">talk with us</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section id="services ">
+        <div class="row container-fluid my-5">
+            <div class="col-lg-4">
+                <div class="card border border-white">
+                    <img src="img/free-shipping_01.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text fw-bold text-center">FAST FREE SHIPPING ON ALL ORDERS</h5>
+                        <p class="text-center">
+                            Get Free Shipping on all your orders in the USA, ensuring your confidence in every purchase.
+                            Orders ship out same-day or next day
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border border-white">
+                    <img src="img/customer-service_01.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text fw-bold text-center">AMAZING CUSTOMER SERVICE</h5>
+                        <p class="text-center">
+                            We respond to emails within 1 to 24 hours during weekdays, and within 48 hours on holidays
+                            and weekends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card border border-white">
+                    <img src="img/honesty_-loyalty-and-integrity_01.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-text fw-bold text-center">HONESTY, LOYALTY, AND INTEGRITY</h5>
+                        <p class="text-center">
+                            These are the old fashioned values on which our company is built. Expect them with every
+                            transaction!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="signup">
+        <div class="container-fluid signup-wrapper p-5">
+            <div class="news-letter-content my-4">
+                <div class="signup-title fw-bolder">
+                    <h1>
+                        SIGN UP FOR SALES AND OUR NEWSLETTER!
+                    </h1>
+                </div>
+                <div class="signup-text">
+                    <p>
+                        Deals, discounts, and money-off coupons along with new product releases.
+                    </p>
+                </div>
+                <div class="signup-form d-flex justify-content-center align-items-center">
+                    <div class="input-group w-50 ">
+                        <input type="text" class="form-control rounded-pill me-3 bg-secondary newsletter-input "
+                            placeholder="Your Email" aria-label="Recipient's username with two button addons">
+                        <button class="btn btn-outline-secondary rounded-pill bg-white px-4 text-warning text-uppercase"
+                            type="button">Sign up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="reviews">
+        <div class="review-container container-fluid mt-3 p-5">
+            <div class="overlay-reviews">
+
+            </div>
+            <div class="review-content p-5">
+                <div class="review-title-text text-center mt-5 mb-3 text-white">
+                    <h1 class="fw-bolder">
+                        REVIEWS
+                    </h1>
+                    <p>
+                        See what people are saying
+                    </p>
+                </div>
+                <div class="card-container">
+                    <div class="row p-5">
+                        <div class="col-lg-3">
+                            <div class="card reviews-card text-white text-center">
+                                <div class="card-body reviews-card-body">
+                                    <span class="five-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <h2 class="card-title mt-2 "><i>Great Product</i></h2>
+                                    <p class="card-text my-2 "><i>Great product, very well built. Highly recommend this
+                                            seller</i></p>
+                                    <p class="card-text my-2 "><i>November 2, 2018</i> </p>
+                                    <p class="card-text my-2">Daniel Southcomb / Amazon</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card reviews-card text-white text-center">
+                                <div class="card-body reviews-card-body">
+                                    <span class="five-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <h2 class="card-title mt-2 "><i>Very Good</i></h2>
+                                    <p class="card-text my-2 "><i>Very good quality, fast delivery ,easy to install,
+                                            good finish</i></p>
+                                    <p class="card-text my-2 "><i>August 28, 2018</i> </p>
+                                    <p class="card-text my-2">Juan Bagnasco / Amazon</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card reviews-card text-white text-center">
+                                <div class="card-body reviews-card-body">
+                                    <span class="five-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <h2 class="card-title mt-2 "><i>Good quality</i></h2>
+                                    <p class="card-text my-2 "><i>These are very good quality. I used them to replace
+                                            worn out gas lifts on our trash chute doors. They installed easily. So far I
+                                            installed them on one door and is working very well. I will order 6
+                                            more.</i></p>
+                                    <p class="card-text my-2 "><i>June 9, 2018</i> </p>
+                                    <p class="card-text my-2">SGC / Amazon</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card reviews-card text-white text-center">
+                                <div class="card-body reviews-card-body">
+                                    <span class="five-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                    <h2 class="card-title mt-2 "><i>It Works</i></h2>
+                                    <p class="card-text my-2 "><i>Fit perfectly on our hotel linen chute and passed
+                                            local fire inspection.</i></p>
+                                    <p class="card-text my-2 "><i>November 13, 2018</i> </p>
+                                    <p class="card-text my-2">Jeff E / Amazon</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
-        </div>
-
-    </section>
-    <section id="services">
-        <div class="row container-fluid">
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="sigup">
-        <div class="container-fluid sigup-wrapper">
-            <div class="sigup-title">
-                <h1>
-                    SIGN UP FOR OUR NEWSLETTER
-                </h1>
-            </div>
-            <div class="sigup-text">
-                <p>
-                    Sign up for our newsletter to get the latest updates and offers.
-                </p>
-            </div>
-            <div class="sigup-form">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Recipient's username"
-                        aria-label="Recipient's username with two button addons">
-                    <button class="btn btn-outline-secondary" type="button">Button</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="reviws">
-        <div class="review-container container-fluid">
-            <div class="review-title-text">
-                <h1>
-                    REVIEWS
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
-            </div>
-            <div class="card-container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of
-                                    the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <section id="footer">
-        <div class="footer-wrapper">
+        <div class="footer-wrapper pb-3">
+            <div class="footer-1 d-flex justify-content-between px-3">
+                <h4 class="d-flex justify-content-start text-white pt-3 fw-bolder"> It's All About You</h4>
+                <div class="socials d-flex justify-content-end align-items-center">
+                    <span>FOLLOW US:</span>
+                    <a href="https://twitter.com/ProChutes" target="_blank" data-label="Twitter"
+                        rel="noopener noreferrer nofollow" class="twitter-icon me-2" aria-label="Follow on Twitter"><i
+                            class="bi bi-twitter p-2 text-center pt-5 mx-0 my-auto "></i></a>
+                    <a href="https://www.youtube.com/channel/UCAHy-OSVcJ8pd1dnYGrG6pg" target="_blank"
+                        rel="noopener noreferrer nofollow" data-label="YouTube" class="youtube-icon"
+                        aria-label="Follow on YouTube"><i class="bi bi-youtube p-2 text-center"></i></a>
+                </div>
 
+            </div>
+            <div class="footer-2 d-flex justify-content-between px-3 pt-5  flex-column flex-sm-row">
+                <div class="footer-primary ms-4">
+                    <div class="footer-links">
+                        <ul id="" class="d-inline-flex mb-0 ps-0 text-uppercase fs-6 flex-column flex-sm-row">
+                            <li id=""
+                                class="footer-links-list pe-3"><a
+                                    href="https://www.prochutes.com/shop/" class="fll">Product Categories</a></li>
+                            <li id=""
+                                class="footer-links-list pe-3"><a
+                                    href="https://www.prochutes.com/pages/about/"class="fll">About</a></li>
+                            <li id=""
+                                class="footer-links-list pe-3"><a
+                                    href="https://www.prochutes.com/return-policy/"class="fll">Return &amp; Warranty Policy</a>
+                            </li>
+                            <li id=""
+                                class="footer-links-list pe-3">
+                                <a href="https://www.prochutes.com/privacy-policy/"class="fll">Privacy Policy</a></li>
+                            <li id=""
+                                class="footer-links-list "><a
+                                    href="https://www.prochutes.com/terms/" class="fll">Terms and Conditions</a>
+                                </li>
+                        </ul>
+                        <div class="footer-divider "></div>
+                    </div>
+                   
+                    <div class="copyright-footer">
+                        Pro Chutes. All rights reserved. Copyright 2022 © <strong> </strong></div><strong>
+                    </strong>
+                </div>
+                <div class="payment d-flex justify-content-end align-items-center">
+                    <img src="img/payment-icons_newest-2.png" alt="" class="img-fluid">
+                </div>
+
+            </div>
         </div>
     </section>
+</div>
+    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
