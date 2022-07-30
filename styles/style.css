@@ -453,6 +453,7 @@ figcaption{
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 50% 50%;
+    min-height: 35rem;
 }
 iframe{
     width: 50%;
@@ -549,6 +550,8 @@ iframe{
 }
 .newsletter-input::placeholder{
     color: #fff;
+    position: absolute;
+    
 }
 /* .signup-wrapper::after{
     content: "";
@@ -686,6 +689,44 @@ iframe{
 .carousel-caption p{
     font-size: 0.5rem!important;
     
+}
+iframe{
+    height: 8.5rem;
+    width: 86%;
+}
+ .video-container{
+    padding-left:  var(--bs-gutter-x,.5rem)!important;
+    padding-right: var(--bs-gutter-x,.5rem)!important;
+}
+.overlay-customer-container{
+    display: block!important;
+    width: auto!important;
+    margin-top: 2rem;
+}
+.section-title h5{
+    font-size: 0.8rem;
+}
+.categories-card .card-body {
+    height: 43%;
+    bottom: 1.8rem;
+}
+.categories-card .card-title, .customercare-button a, .customercare-text p {
+    font-size: 0.7rem!important;
+}
+.customer-care{
+    height: 72vh;
+    background-position: 50% 55%;
+}
+.customercare-title h1{
+    font-size: 1rem!important;
+}
+.signup-form > .input-group > .form-control{
+    width: 100%;
+    padding: 0.375rem 8rem!important;
+    left: -5rem;
+}
+.newsletter-input::placeholder{
+    left: 2rem;
 }
 }
 
