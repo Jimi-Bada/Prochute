@@ -310,10 +310,8 @@ color: #fff;
 .carousel-control-next-icon{
     background-position: right;
 }
-.carousel-control-prev {
-    left: -82px;
-}
-.carousel-control-next {
+
+.carousel-control-next, .carousel-control-prev {
    width: 9%!important;
 }
 .carousel-caption {
@@ -551,7 +549,7 @@ iframe{
 .newsletter-input::placeholder{
     color: #fff;
     position: absolute;
-    
+
 }
 /* .signup-wrapper::after{
     content: "";
@@ -623,110 +621,185 @@ iframe{
 }
 
 /* media queries */
-
-@media screen and (max-width : 426px) {
+@media screen and ( max-width: 505px) {
     .logo{
         width:2rem;
     }
+}
+   @media screen and (min-width: 992px) and (max-width:1200px){
+       html{
+           font-size: 0.8rem;
+       }
+       .search-control{
+        padding: 0 0.5rem 0 0.75rem!important;
+    }
+    .phone,#options form{
+        height: 53%!important;
+    }
+    .overlay-customer-container{
+        display: block!important;
+        width: auto!important;
+        margin-top: 2rem;
+    }
+    .customer-care{
+        height: 72vh;
+        background-position: 50% 55%;
+    }
+    .customercare-title h1{
+        font-size: 2rem!important;
+    }
+    .customercare-text{
+        font-size: 1.3rem!important;
+    }
+   }
+   @media screen and (max-width: 992px){
+    .phone .bi-bag{
+        font-size: 1.2rem;
+    }
+    .phone,#options{
+        height: 1.5rem!important;
+    }
+    .largescreen-nav{
+        display: none;
+    }
+    .phone-nav{
+        display: contents;
+    }
     
-.phone,#options{
-    height: 1.5rem!important;
+    .modal-content{
+        width: 18rem!important;
+        height: 100vh; 
+        display: flex;  
+        overflow-y: hidden;
+        text-align: start;
+    }
+    .modal-dialog{
+        margin: 0rem!important;
+    
+    }
+    .modal-content{
+        width: 22rem;
+    }
+    .modal-content::after{
+        left: 0.5rem;
+    }
+    .modal-header, .modal-body{
+        width: 28ch;
+    }
+    .modal-title{
+        font-size: 1.5rem!important;
+    }
+    .modal-body p{
+        font-size: 1rem!important;
+    }
+    .carousel-caption{
+        top: 0.5rem;
+    }
+    /* .carousel-caption h1{ 
+        font-size: 0.5rem!important;
+    } */
+    .carousel-caption h4, .carousel-caption h1{
+        font-size: 1.2rem!important;
+    }
+    .carousel-caption-3 h4{
+        font-size: .85rem!important;
+    }
+    .carousel-caption p{
+        font-size: 0.5rem!important;
+        
+    }
+    .carousel-caption a{
+        font-size: 0.6rem!important;
+    }
+    .overlay-customer-container{
+        display: block!important;
+        width: auto!important;
+        margin-top: 2rem;
+    }
+    .customer-care{
+        height: 72vh;
+        background-position: 50% 55%;
+    }
+    .customercare-title h1{
+        font-size: 1rem!important;
+    }
+    .signup-form > .input-group > .form-control{
+        width: 100%;
+        padding: 0.375rem 6.5rem!important;
+     
+    }
+    .signup-form > .input-group{
+        width: 100% !important;
+    
+    }
+    .newsletter-input::placeholder{
+        left: 2rem;
+    }
+  
+   } 
+@media screen and (max-width:769px) {
+    
+   
+    .search-control{
+        padding: 0 0.5rem 0 0.75rem!important;
+    }
+    .navbar-toggler{
+        padding: 0.5rem 0 0 0!important;
+    }
+    .navbar-brand{
+        margin: 0 0.5rem 0 0!important;    
+    }
+  
+    
+    iframe{
+        height: 8.5rem;
+        width: 86%;
+    }
+     .video-container{
+        padding-left:  var(--bs-gutter-x,.5rem)!important;
+        padding-right: var(--bs-gutter-x,.5rem)!important;
+    }
+   
+    .categories-card .card-body {
+        height: 45%;
+        bottom: 1.8rem;
+    }
+   
+    .rev, .reviews-card-body h2{
+        font-size: 0.8rem!important;
+    }
 }
-.search-control{
-    padding: 0 0.5rem 0 0.75rem!important;
-}
-.navbar-toggler{
-    padding: 0.5rem 0 0 0!important;
-}
-.navbar-brand{
-    margin: 0 0.5rem 0 0!important;    
-}
-.largescreen-nav{
-    display: none;
-}
-.phone-nav{
-    display: contents;
-}
-.section-title h3::before, 
-.section-title h3::after{
-    content: none;
-}
-.modal-content{
-    width: 18rem!important;
-    height: 100vh; 
-    display: flex;  
-    overflow-y: hidden;
-    text-align: start;
-}
-.modal-dialog{
-    margin: 0rem!important;
+@media screen and (max-width : 576px){
+   
+    
 
+.phone .bi-bag{
+    font-size: 1rem;
 }
-.modal-content{
-    width: 22rem;
-}
-.modal-content::after{
-    left: 0.5rem;
-}
-.modal-header, .modal-body{
-    width: 28ch;
-}
-.modal-title{
-    font-size: 1.5rem!important;
-}
-.modal-body p{
-    font-size: 1rem!important;
-}
-.carousel-caption{
-    bottom: 0.5rem;
-}
-.carousel-caption h1{ 
-    font-size: 1.2rem!important;
-}
-.carousel-caption h4{
-    font-size: 0.8rem!important;
-}
-.carousel-caption p{
-    font-size: 0.5rem!important;
-    
-}
-iframe{
-    height: 8.5rem;
-    width: 86%;
-}
- .video-container{
-    padding-left:  var(--bs-gutter-x,.5rem)!important;
-    padding-right: var(--bs-gutter-x,.5rem)!important;
-}
-.overlay-customer-container{
-    display: block!important;
-    width: auto!important;
-    margin-top: 2rem;
-}
+
+
+
 .section-title h5{
     font-size: 0.8rem;
 }
-.categories-card .card-body {
-    height: 43%;
-    bottom: 1.8rem;
-}
+
 .categories-card .card-title, .customercare-button a, .customercare-text p {
     font-size: 0.7rem!important;
 }
-.customer-care{
-    height: 72vh;
-    background-position: 50% 55%;
+
+
+
+
+.footer-links ul{
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row!important;
 }
-.customercare-title h1{
-    font-size: 1rem!important;
+.footer-links ul li a {
+    font-size: 0.75rem;
 }
-.signup-form > .input-group > .form-control{
-    width: 100%;
-    padding: 0.375rem 8rem!important;
-    left: -5rem;
-}
-.newsletter-input::placeholder{
-    left: 2rem;
+.rev{
+    width: auto;
 }
 }
 
