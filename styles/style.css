@@ -234,7 +234,7 @@ color: #fff;
        padding-top: 0.5rem!important;
        padding-bottom: 0.5rem!important;
    }
-   .select-options > #options{
+   .select-options > #resizingSelectTag{
        padding: 0.5rem auto;
        text-align: center;
        width:6ch;
@@ -619,6 +619,9 @@ iframe{
 .fll:hover{
     color: #fff!important;
 }
+#selectTagWidth{
+    display : none;
+   } 
 
 /* media queries */
 @media screen and ( max-width: 505px) {
@@ -633,7 +636,7 @@ iframe{
        .search-control{
         padding: 0 0.5rem 0 0.75rem!important;
     }
-    .phone,#options form{
+    .phone,#resizingSelectTag form{
         height: 53%!important;
     }
     .overlay-customer-container{
@@ -656,7 +659,7 @@ iframe{
     .phone .bi-bag{
         font-size: 1.2rem;
     }
-    .phone,#options{
+    .phone,#resizingSelectTag{
         height: 1.5rem!important;
     }
     .largescreen-nav{

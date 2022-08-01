@@ -33,6 +33,10 @@ const chevron = document.querySelector('.phone-nav-chevron');
 const dropdown = document.querySelector('.dropdown');
 const menu = document.querySelector('#nav-item-menu');
 const phoneNewsletter = document.querySelector('.phone-newsletter');
+
+const setOfCategories= document.querySelectorAll('.categories');
+const optionsSelect = document.querySelector('#options');
+
 console.log(chevron);
 
 function toggleDropdown(){
@@ -40,6 +44,12 @@ function toggleDropdown(){
    console.log(dropdown.classList.toggle('table-display')) ;
     menu.classList.toggle("nav-item-menu");
 }
-function closeNav(){
-    
-}
+
+
+
+$(document).ready(function() {
+    $('#resizingSelectTag').change(function(){
+       $("#widthTempOption").html($('#resizingSelectTag option:selected').text());
+       $(this).width($("#selectTagWidth").width());  
+    });
+   });
