@@ -636,7 +636,7 @@ iframe{
        .search-control{
         padding: 0 0.5rem 0 0.75rem!important;
     }
-    .phone,#resizingSelectTag form{
+    .phone,#options form{
         height: 53%!important;
     }
     .overlay-customer-container{
@@ -654,12 +654,15 @@ iframe{
     .customercare-text{
         font-size: 1.3rem!important;
     }
+    .newsletter {
+        width: 7%;
+    }
    }
    @media screen and (max-width: 992px){
     .phone .bi-bag{
         font-size: 1.2rem;
     }
-    .phone,#resizingSelectTag{
+    .phone,#options{
         height: 1.5rem!important;
     }
     .largescreen-nav{
@@ -738,11 +741,16 @@ iframe{
     .newsletter-input::placeholder{
         left: 2rem;
     }
-  
+    .newsletter {
+        width: 13%;
+    }
+    #options{
+        width: 12ch;
+    }
    } 
 @media screen and (max-width:769px) {
     
-   
+    
     .search-control{
         padding: 0 0.5rem 0 0.75rem!important;
     }
@@ -773,7 +781,9 @@ iframe{
     }
 }
 @media screen and (max-width : 576px){
-   
+   #options{
+       width: 6ch;
+   }
     
 
 .phone .bi-bag{
