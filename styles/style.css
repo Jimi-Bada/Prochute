@@ -137,6 +137,10 @@ color: #fff;
 .nav-link{
     width: max-content;
 }
+.nav-item{
+  display: flex;
+  align-items: center;     
+}
 .offcanvas-body >.largescreen-nav > ul  > li> a, .offcanvas-body >.phone-nav > ul  > li> a{
     color:  rgba(102,102,102,.85)!important;
     text-transform: uppercase;
@@ -238,13 +242,14 @@ color: #fff;
        padding: 0.5rem auto;
        text-align: center;
        width:6ch;
+       
        height:2rem;
    }
   .select-options > form > .form-control{
-   padding-bottom: 0!important;
-   padding-right: 6rem!important;
+   padding: 0!important;
+  
    }
-   
+  
  #navigation-bar .btn{
     background: #f0c14b!important;
     border: none;
@@ -630,12 +635,16 @@ iframe{
         width:2rem;
     }
 }
-   @media screen and (min-width: 992px) and (max-width:1200px){
+   @media screen and (min-width: 992px) and (max-width:1300px){
        html{
            font-size: 0.8rem;
        }
        .search-control{
-        padding: 0 0.5rem 0 0.75rem!important;
+        padding: 0!important;
+       
+    }
+    .select-options > #resizingSelectTag{
+        max-width: 25ch;
     }
     .phone,#options form{
         height: 53%!important;
