@@ -3,8 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
-
- 
 }
 a{
     color: black;
@@ -136,7 +134,9 @@ color: #fff;
 .navbar-toggler:focus {
     box-shadow: none;
 }
-
+.nav-link{
+    width: max-content;
+}
 .offcanvas-body >.largescreen-nav > ul  > li> a, .offcanvas-body >.phone-nav > ul  > li> a{
     color:  rgba(102,102,102,.85)!important;
     text-transform: uppercase;
@@ -241,7 +241,8 @@ color: #fff;
        height:2rem;
    }
   .select-options > form > .form-control{
-      padding: 0  12.75rem 0 0.75rem!important;
+   padding-bottom: 0!important;
+   padding-right: 6rem!important;
    }
    
  #navigation-bar .btn{
